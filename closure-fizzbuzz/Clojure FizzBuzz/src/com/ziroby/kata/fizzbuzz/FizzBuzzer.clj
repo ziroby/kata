@@ -9,4 +9,6 @@
 (defn -init [] [[] (atom [])])
 
 (defn -convert [this number]
-  (str number))
+  (cond
+    (= 3 number) "fizz"
+    :else (str number)))
