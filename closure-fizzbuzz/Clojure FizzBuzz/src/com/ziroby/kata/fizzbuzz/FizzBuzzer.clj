@@ -9,4 +9,4 @@
 (defn -init [] [[] (atom [])])
 
 (defn -convert [this number]
-  "1")
+  (str number))

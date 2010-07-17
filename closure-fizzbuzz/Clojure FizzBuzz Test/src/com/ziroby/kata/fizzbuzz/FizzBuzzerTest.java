@@ -10,4 +10,12 @@ public class FizzBuzzerTest extends TestCase
 
         assertEquals("1", result);
     }
+
+    public void test2() throws Exception {
+        FizzBuzzer buzzer = new FizzBuzzer();
+        String result = buzzer.convert(2);
+
+        assertEquals("2", result);
+
+    }
 }
