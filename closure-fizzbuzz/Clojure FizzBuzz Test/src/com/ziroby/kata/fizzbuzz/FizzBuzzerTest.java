@@ -4,18 +4,18 @@ import junit.framework.TestCase;
 
 public class FizzBuzzerTest extends TestCase
 {
-    public void test1() throws Exception {
+    private void check(final String expected, final int number) {
         FizzBuzzer buzzer = new FizzBuzzer();
-        String result = buzzer.convert(1);
+        String result = buzzer.convert(number);
 
-        assertEquals("1", result);
+        assertEquals(expected, result);
+    }
+
+    public void test1() throws Exception {
+        check("1", 1);
     }
 
     public void test2() throws Exception {
-        FizzBuzzer buzzer = new FizzBuzzer();
-        String result = buzzer.convert(2);
-
-        assertEquals("2", result);
-
+        check("2", 2);
     }
 }
