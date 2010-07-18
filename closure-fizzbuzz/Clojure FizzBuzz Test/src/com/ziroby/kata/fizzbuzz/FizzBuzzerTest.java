@@ -24,4 +24,7 @@ public class FizzBuzzerTest extends TestCase
     public void test5() throws Exception {
         check("buzz", 5);
     }
+    public void test6() throws Exception {
+        check("fizz", 6);
+    }
 }

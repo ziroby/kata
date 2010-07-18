@@ -11,5 +11,5 @@
 (defn -convert [this number]
   (cond
     (= 5 number) "buzz"
-    (= 3 number) "fizz"
+    (= 0 (mod number 3)) "fizz"
     :else (str number)))
