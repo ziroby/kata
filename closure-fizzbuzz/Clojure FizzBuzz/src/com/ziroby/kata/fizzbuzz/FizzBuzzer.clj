@@ -8,11 +8,11 @@
 
 (defn -init [] [[] (atom [])])
 
-(defn isDivisibleBy3 [number]
-  (= 0 (mod number 3)))
+(defn isDivisibleBy [number divisor]
+  (= 0 (mod number divisor)))
 
 (defn -convert [this number]
   (cond
-    (= 5 number) "buzz"
-    (isDivisibleBy3 number) "fizz"
+    (isDivisibleBy number 5) "buzz"
+    (isDivisibleBy number 3) "fizz"
     :else (str number)))
